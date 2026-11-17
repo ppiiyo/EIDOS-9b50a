@@ -98,7 +98,7 @@ jobs:
           echo "owner=$OWNER_LOWER" >> "$GITHUB_OUTPUT"
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: Log in to GitHub Container Registry (GHCR)
         if: github.event_name == 'push'
